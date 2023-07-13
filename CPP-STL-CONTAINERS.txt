@@ -1,0 +1,186 @@
+/*
+      ------ IN STL BASICALLY WE HAVE -----
+      1.Containers : array set map list vector stack queue.
+      2.Algorithms : binarySearch  min/max  lower/upper-Bound reverse swap sort rotate.
+
+*/
+
+
+/*                                        ----Array-----
+      
+      [Array is a data structure which stores similar type of element in contigeous memory locations]
+
+                        Syntax:1. int a[10];
+                               2. array<int,10> a;
+
+      
+
+                        Operations :a.size() --> SIZE OF THE ARRAY
+                                    a.empty() --> CHECK IF ARRAY IS EMPTY OR NOT RETURN BOOL VALUE
+                                    a.at(index) --> PRINT THE ELEMENT AT THAT INDEX
+                                    a.front() --> PRINT THE FIRST ELEMENT OF THE ARRAY
+                                    a.back() --> PRINT THE LAST ELEMENT OF THE ARRAY
+
+*/
+
+
+/*
+
+                                          -----Vector-----
+                  
+      [Vector can be called as dynamic array.It can modify vector at run time and we can play with it.]
+                        
+                        Syntax:1. vector<int> v;
+                               2. vector<int> a(5,1); // {1,1,1,1,1}
+                               3. vector<int> b(a); // copy vector a to b
+
+            
+                        Operations :v.capacity() --> MEMORY ALLOCATED TO VECTOR 
+                                    v.push_back() --> ADD ELEMENT FROM BACK
+                                    v.size() --> SIZE OF VECTOR
+                                    v.at(index) --> PRINT THE ELEMENT AT THAT INDEX
+                                    v.front() --> PRINT FIRST ELEMENT OF VECTOR
+                                    v.back() --> PRINT LAST ELEMENT OF VECTOR
+                                    v.pop_back --> REMOVE THE LAST ELEMENT
+                                    v.clear() --> CLEAR THE SIZE OF VECTOR, CAPACITY REMAINS SAME
+
+*/
+
+
+
+/*
+                                           -----Dequeue----
+
+      [Deque is a data structure where we can perform Insertion/deletion from the front/last indexes, it is not congtigeous and it is dynamic]
+
+                        Syntax:1. deque<int> d;
+
+
+                        Operations :d.push_back() --> ADD ELEMENT FROM BACK
+                                    d.push_front() --> ADD ELEMENT FROM FRONT
+                                    d.pop_back() --> REMOVE THE LAST ELEMENT
+                                    d.pop_front() --> REMOVE THE FIRST ELEMENT
+                                    d.at(index) --> PRINT THE ELEMENT AT THAT INDEX
+                                    d.front() --> PRINT FIRST ELEMENT OF DEQUE
+                                    d.back() --> PRINT LAST ELEMENT OF DEQUE
+                                    d.empty() --> CHECK IF DEQUE IS EMPTY OR NOT RETURN BOOL VALUE
+                                    d.erase(range) --> REMOVE THE ELEMENT UNDER THIS RANGE
+                                    d.size() --> HOW MANY ELEMENTS ARE THEIR IN DEQUE
+*/
+
+
+/*
+                                           -----Lists----
+
+      [Lists are derived from Doubly Linked List and it is a data structure, we cant directly access the element O(1) nhi hota]
+
+                        Syntax:1. list<int> l;
+                               2. list<int> l(5,100); // {100,100,100,100,100}
+
+                        Operations :l.push_back() --> ADD ELEMENT FROM BACK
+                                    l.push_front() --> ADD ELEMENT FROM FRONT
+                                    l.pop_back() --> REMOVE THE LAST ELEMENT
+                                    l.pop_front() --> REMOVE THE FIRST ELEMENT
+                                    l.at(index) --> PRINT THE ELEMENT AT THAT INDEX
+                                    l.front() --> PRINT FIRST ELEMENT OF LIST
+                                    l.back() --> PRINT LAST ELEMENT OF LIST
+                                    l.empty() --> CHECK IF LIST IS EMPTY OR NOT RETURN BOOL VALUE
+                                    l.erase(range) --> REMOVE THE ELEMENT UNDER THIS RANGE
+                                    l.size() --> HOW MANY ELEMENTS ARE THEIR IN LIST
+*/
+
+
+/*
+                                           -----Stack----
+
+                        [Stack is a data structure which follow LIFO property.]
+
+                        Syntax:1. stack<type> s;
+                               
+
+                        Operations :s.push() --> ADD ELEMENT FROM BACK
+                                    s.pop() --> REMOVE THE LAST ELEMENT
+                                    s.top() --> DISPLAY THE LAST ELEMENT
+                                    s.empty() --> CHECK IF LIST IS EMPTY OR NOT RETURN BOOL VALUE
+                                    s.size() --> HOW MANY ELEMENTS ARE THEIR IN LIST
+
+*/
+
+
+/*
+                                           -----Queue----
+
+                        [Queue is a data structure which follow FIFO property.]
+
+                        Syntax:1. queue<type> q;
+                               
+
+                        Operations :q.push() --> ADD ELEMENT FROM BACK
+                                    q.pop() --> REMOVE THE LAST ELEMENT
+                                    q.top() --> DISPLAY THE LAST ELEMENT
+                                    q.empty() --> CHECK IF LIST IS EMPTY OR NOT RETURN BOOL VALUE
+                                    q.size() --> HOW MANY ELEMENTS ARE THEIR IN LIST
+
+*/
+
+/*
+                                                 -----Priority-Queue----
+
+            [Priority-Queue is a data structure which has always max element in first,it defualt acts as Max-Heap]
+
+                        Syntax:1. priority_queue<type> maxi; //maxHeap
+                               2. priority_queue< int, vector<int>, greater<int> > mini; //minHeap
+                  
+                        Operations :maxi.push() --> ADD ELEMENT FROM BACK
+                                    maxi.pop() --> REMOVE THE LAST ELEMENT
+                                    maxi.top() --> DISPLAY THE MAX ELEMENT AND FURTHER
+                                    maxi.empty() --> CHECK IF LIST IS EMPTY OR NOT RETURN BOOL VALUE
+                                    maxi.size() --> HOW MANY ELEMENTS ARE THEIR IN LIST
+
+                                    mini.push() --> ADD ELEMENT FROM BACK
+                                    mini.pop() --> REMOVE THE LAST ELEMENT
+                                    mini.top() --> DISPLAY THE LAST ELEMENT
+                                    mini.empty() --> CHECK IF LIST IS EMPTY OR NOT RETURN BOOL VALUE
+                                    mini.size() --> HOW MANY ELEMENTS ARE THEIR IN LIST
+
+*/
+
+/*
+                                                            -----Sets----
+
+
+      [Sets is a data structure which stores elements in sorted order but only unique and we have ordered and undordered sets, unordered is faster but their is unsorted order, it is done by BST algorithm in behind the scene]
+
+                        Syntax:1. set<int> s;
+                  
+                        Operations :s.insert() --> ADD ELEMENT
+                                    s.pop() --> REMOVE THE LAST ELEMENT
+                                    s.erase(range) --> REMOVE ELEMENT IN RANGES
+                                    s.count() --> ELEMENT PRESENT OR NOT
+                                    
+
+*/
+
+
+/*
+                                                            -----Map----
+
+
+      [Map is a data structure where value stores in a form of key : value pair, all keys are unique and pointing to unique value ]
+
+                        Syntax:1. map<int,string> m;
+
+                                  m[1]="a";  1->a
+                                  m[2]="b";  2->b
+                                  m[3]="c";  3->c
+                  
+                        Operations :m.insert({key:value}) --> ADD ELEMENTS
+                                    m.pop() --> REMOVE THE LAST ELEMENT
+                                    m.erase(range) --> REMOVE ELEMENT IN RANGES
+                                    m.count() --> ELEMENT PRESENT OR NOT
+                                    
+                         Accessing: for(auto i:m){
+                                          cout<<i.first<<" "<<i.second<<endl; //key = i.first , value = i.second
+                                    } 
+
+*/
